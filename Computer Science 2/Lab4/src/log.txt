@@ -1,0 +1,23 @@
+commit e6495eaf313f490746ff22e818b5fc8af9fa41bc
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Sep 19 23:28:53 2016 -0400
+
+    Commented  all classes!
+
+commit 8731ee59a046317e8debb7bb762f35bdc52ea515
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Sep 19 17:48:27 2016 -0400
+
+    Implemented all classes correctly along with the store class.
+
+commit 72a82e1efacea9b24597c1c8d5fb4fca95b77a1e
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Sat Sep 17 10:05:17 2016 -0400
+
+    Implemented AudioBook subclass
+
+commit c86ada40b33d76f5b3f7fb2b4786f78a04f56634
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Tue Sep 13 15:35:43 2016 -0400
+
+    Added Project into repository!

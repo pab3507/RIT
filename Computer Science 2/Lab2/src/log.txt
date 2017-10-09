@@ -1,0 +1,11 @@
+commit 3321ea3290159928c009979ab5eb60850add77a6
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Sep 5 21:22:15 2016 -0400
+
+    Added Comments and Author to files. Also modified the name of some variables so they're more appropiate to context.
+
+commit b271729e26ae281f65a8000d1f965d17562628e8
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Sun Sep 4 19:22:02 2016 -0400
+
+    Completed implementation of Card class
