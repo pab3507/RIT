@@ -1,0 +1,83 @@
+AdvancedFlight Flight Electronics MotorizedTransportation
+Alphabet None
+AmphibiousWar MassProduction
+Astronomy Education
+AtomicTheory ScientificMethod
+Banking Education
+BronzeWorking None
+CeremonialBurial None
+Chemistry Gunpowder
+Chivalry Monotheism Feudalism
+CodeOfLaws Writing
+Combustion Refining Steel
+Communism Nationalism
+Computers Communism Fascism Espionage Ironclads Sanitation AmphibiousWar AdvancedFlight
+Construction IronWorking Mathematics
+TheCorporation Industrialization
+Currency Mathematics
+Democracy PrintingPress Banking
+Ecology Communism Fascism Espionage Ironclads Sanitation AmphibiousWar AdvancedFlight
+Economics Banking
+Education Theology
+Electricity SteamPower
+Electronics AtomicTheory
+Engineering Construction Currency TheRepublic Literature MapMaking HorsebackRiding Monarchy
+Espionage Nationalism Industrialization
+Fascism Nationalism
+Feudalism Construction Currency TheRepublic Literature MapMaking HorsebackRiding Monarchy
+Fission Communism Fascism Espionage Ironclads Sanitation AmphibiousWar AdvancedFlight
+Flight Combustion
+FreeArtistry Democracy
+Genetics Miniaturization
+Gunpowder Invention
+HorsebackRiding TheWheel WarriorCode
+Industrialization SteamPower
+IntegratedDefense Superconductor Satellites SmartWeapons
+Invention Feudalism Engineering
+IronWorking BronzeWorking
+Ironclads SteamPower
+TheLaser NuclearPower Computers
+Literature Writing
+Magnetism Physics
+MapMaking Writing Pottery
+Masonry None
+MassProduction Combustion ReplaceableParts
+Mathematics Masonry Alphabet
+Medicine FreeArtistry Economics Navigation TheoryOfGravity Magnetism MilitaryTradition Chivalry MusicTheory
+Metallurgy Chemistry
+MilitaryTradition Metallurgy
+Miniaturization Computers
+Monarchy WarriorCode Polytheism
+Monotheism Construction Currency TheRepublic Literature MapMaking HorsebackRiding Monarchy
+MotorizedTransportation MassProduction
+MusicTheory Education
+Mysticism CeremonialBurial
+Nationalism FreeArtistry Economics Navigation TheoryOfGravity Magnetism MilitaryTradition Chivalry MusicTheory
+Navigation Astronomy
+NuclearPower Fission
+Philosophy Writing
+Physics Astronomy Chemistry
+Polytheism Mysticism
+Pottery None
+PrintingPress Theology
+Recycling Ecology
+Refining TheCorporation
+ReplaceableParts Electricity
+TheRepublic Philosophy CodeOfLaws
+Robotics TheLaser Miniaturization
+Rocketry Communism Fascism Espionage Ironclads Sanitation AmphibiousWar AdvancedFlight
+Sanitation Medicine
+Satellites SpaceFlight
+ScientificMethod Medicine Electricity
+SmartWeapons Satellites TheLaser
+SpaceFlight Rocketry
+Stealth SyntheticFibers
+SteamPower FreeArtistry Economics Navigation TheoryOfGravity Magnetism MilitaryTradition Chivalry MusicTheory
+Steel TheCorporation
+Superconductor Fission SpaceFlight
+SyntheticFibers Ecology
+Theology Monotheism
+TheoryOfGravity Physics
+WarriorCode None
+TheWheel None
+Writing Alphabet

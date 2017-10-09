@@ -1,0 +1,17 @@
+commit 9c48745bed4b16914485000db9415d6fe984dc15
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Nov 14 23:57:17 2016 -0500
+
+    "Final Implementation"
+
+commit 7b979394cbd54247623c94e609e498ea8ab9624a
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Nov 14 23:56:22 2016 -0500
+
+    "Second Implementation"
+
+commit afa1da9066e060167c767349d084e1b33f562130
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Mon Nov 14 23:39:26 2016 -0500
+
+    "First Implementation"

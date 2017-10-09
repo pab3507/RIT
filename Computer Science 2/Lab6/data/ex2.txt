@@ -1,0 +1,5 @@
+CS1 None
+CS2 CS1 Math1
+CS3 CS1 CS2
+Math1 CS1
+CS5 CS2 CS3
