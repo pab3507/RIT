@@ -1,0 +1,46 @@
+body {
+    background-color: #81d4fa;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 18pt;    
+    font-weight: bold;
+    text-align: center;    
+    color: lightgrey;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active { 
+    background-color: grey;
+}
+
+
+.image-box {
+    float: right;
+    text-align: left;
+    margin: 5px;
+    padding: 2px;
+    font-size: 8pt;
+}
