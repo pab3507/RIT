@@ -1,0 +1,52 @@
+body {
+	background-color: #c3a513;
+}
+
+#header {
+	background-image: url(banner.png);
+	background-repeat: repeat-x;
+	width: 680px;
+	height: 220px;
+}
+
+#navlist {
+	width: 680px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff79a;
+	
+}
+
+#navlist li{ 
+	font-size: 24px;
+	font-family: Arial;
+	display: inline;
+	padding-left: 6px;
+	padding-right: 12px;
+}
+
+
+#thispage {
+	font-weight: bold;
+}
+ 
+ #main > h1{
+ 	font-size: 32px;
+	font-family: Arial;
+	color: #ffff00;
+ }
+ 
+ p {
+ 	font-size: 20px;
+ 	font-family: Helvetica;
+ }
+ 
+td {
+    border: 2px solid black;
+}
+ 
+ .finaltable {
+ 
+ 	width: 500px;
+ 	font-family: Times;
+ }

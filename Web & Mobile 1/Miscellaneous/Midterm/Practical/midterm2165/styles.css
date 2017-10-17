@@ -1,0 +1,38 @@
+body {
+    background-color: #E6E6FA;
+    font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	color: #0000FF;
+}
+
+#usa {
+	background-color: #6495ED;
+}
+
+#canyon {
+	float: right;
+}
+
+#panorama {
+	display: block;
+    margin: 0 auto;
+    clear: both;
+    padding: 4px;
+}
+
+#copyright {
+	text-align: center;
+	color: red;
+	font-size: 80%;
+}
+
+a:hover {
+	color:white;
+}
+	
