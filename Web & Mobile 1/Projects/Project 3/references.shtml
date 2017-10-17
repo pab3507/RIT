@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Latin Rhythm Dance Club at RIT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--#include virtual="assets/inc/navbar.inc.html" -->
+
+    <main>
+        <section id="summary">
+            <div class="container wow fadeIn" data-wow-delay="0.2s">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="h1-responsive title-white">Summary</h1>
+                        <hr class="star-summary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p> I decided to use the Latin Rhythm Dance Club as inspiration for my website. I am an active member
+                            of the club and currently serve as social media chair for the executive board. During one of
+                            our eboard meetings we were talking about how we do not have an updated website and I proposed
+                            that I could work this as my project 3 for my web and mobile class. They all agreed and were
+                            excited about the website.
+                        </p>
+                        <p>
+                            Three factors that I feel were really done well were:
+                        </p>
+                        <ol>
+                            <li>
+                                The navigation bar looks really clean and it shows the active links and works properly.
+                            </li>
+                            <li>
+                                The images on the slider are top notch and adds an unique touch to the website.
+                            </li>
+                            <li>
+                                The footer's content is very thorough and also has music playlists for the interested people.
+                            </li>
+                        </ol>
+                        <p> I feel like the design of the website is A-level work. The User Interface feels very modern and intuitive.
+                        </p>
+                        <p>
+                            Two factors that I think can use improvement:
+                        </p>
+                        <ol>
+                            <li>
+                                The content could have been more descriptive and explicit.
+                            </li>
+                            <li>
+                                I could have added some more additional content to the website to make it more informational.
+                            </li>
+                        </ol>
+                        <p>
+                            Extra Work:
+                        </p>
+                        <ol>
+                            <li>
+                                Exceptional Design
+                            </li>
+                            <li>
+                                jQuery Image Slider
+                            </li>
+                            <li>
+                                Buttons to Social Media
+                            </li>
+                            <li>
+                                Fade In Text Animations
+                            </li>
+                            <li>
+                                Responsive Design including toggeable navbar
+                            </li>
+                            <li>
+                                HTML5 video embedded
+                            </li>
+                            <li>
+                                Spotify Widgets showcasing playlists with corresponding musical genres.
+                            </li>
+                            <li>
+                                Good Font use
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="references">
+            <div class="container wow fadeIn" data-wow-delay="0.2s">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="h1-responsive title-white">References</h1>
+                        <hr class="star-references">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul>
+                            <li> Material Design Bootstrap Framework. (n.d.). Retrieved May 07, 2017, from https://mdbootstrap.com/</li>
+                        </ul>
+                        <ol>
+                            <li> The Logo, which can be seen in the about us section as well as in the footer, is a graphic created
+                                from scratch. </li>
+                            <li> There's a HTML5 Video on the members section embedded. </li>
+                            <li> The images on the lesson and events section contain css image rollover effects. </li>
+                            <li> There's a jQuery Images Slider used at the beginning for easier image viewing and scrolling.</li>
+                            <li> A script for the text which has fadeIn Animations that makes it look more interactive.
+                            <li> A script to specify which element is active on the navbar to indicate user what portion of
+                                    the site he is navigating. </li>
+                            <li> <strong> Note: </strong> Framework requires it's own directories (css, js, img, font, sass) to be on the project's root. Other files are properly located on an assets folder. Thanks for understanding!
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Footer-->
+
+    <!--#include virtual="assets/inc/footer.inc.html" -->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        $(document).ready(function () {
+            $(document).on('click', '.nav-item a', function (e) {
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
