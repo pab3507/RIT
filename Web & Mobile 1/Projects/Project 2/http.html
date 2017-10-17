@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Moisés Lora's Project #2
+    </title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+	<ul class="ulnav">
+		<li class="linav"><a href="index.html">Internet</a></li>
+		<li class="linav"><a href="pioneers.html">Pioneers</a></li>
+		<li class="linav"><a href="http.html">HTTP</a></li>
+		<li class="linav"><a href="terminology.html">Terminology</a></li>
+		<li class="linav"><a href="references.html">References</a></li>
+	</ul>
+</nav>
+
+<div class="header">
+  <h1>Webpage Request and Response</h1> <br>    
+  <img src="assets/media/diagram.jpg" width="600" height="400" alt="Request"> <br>
+</div>
+
+<div class="row">
+
+    <div class="col-12 col-m-12">
+
+            
+
+            Each of these steps are often performed several times during a page load.
+ 
+                <h3> <strong> The request </strong> </h3>
+                
+                <img src="assets/media/request.png" width="600" height="400" alt="Request">
+                
+                <p> Before we go into what happens when a webpage is requested, let's look at what makes a webpage get requested in the first place. The most common way a webpage is requested is when a link is clicked, but requests also occur when a page is refreshed, or when a url is typed into a browser. </p>
+                
+                <p> The moment when a webpage is requested is also called "navigation start". It is basically the moment where the whole process of displaying a page begins.</p>
+                
+                <p> When a linked is clicked a request is made for a document. The document is the webpage file, which is just a text file. It is located on a web server (a webhost).</p>
+                
+                <p> This file is often of the type ".html", but the type of file it is doesn't really matter. The important thing is that a text file is requested by the web browser. The file gets requested using the Hypertext Transfer Protocol (HTTP). </p>
+                
+                <h3> <strong> The response </strong> </h3>
+
+                <img src="assets/media/response.png" width="600" height="400" alt="Response">
+                
+                <p> The web server then provides the file to the web browser. The response is simply the browser receiving what it had requested. </p>
+                
+                <p> If this were a simple webpage (only HTML) the request and response stage of the page load would be complete. However, most webpages contain resources such as images, css, javascript, etc. And in order to display the webpage properly, the web browser must get those page resources as well. </p>
+                
+                <h3> <strong> Parsing </strong> </h3>
+
+                <img src="assets/media/parsing.png" width="600" height="400" alt="Parsing">
+                
+                <p> Once the browser has received the document (html file), it reads it. When a computer reads a file looking for something, it is called "parsing". </p>
+                
+                <p> The web browser looks at the entire HTML document and looks for any css, javascript and images that are referenced by the page. If resources are found in the HTML, the web browser then requests each of those resource files from the webserver. The images, css, and javascript that the HTML file references will be downloaded by the browser. </p>
+                
+                <h3> <strong> The Build </strong> </h3>
+
+                <img src="assets/media/building.png" width="600" height="400" alt="Building">
+                
+                <p> Once the web browser has the required resources it can start building the page. The way a web browser builds the page is by combining the information found in the document (the original HTML file) and the information found in the resources. </p>
+                
+                <p> There are basically three steps that the browser takes to build a page.</p>
+                
+                <h4> <strong> 1. Building the DOM </strong> </h4>
+
+                <img src="assets/media/DOM.png" width="600" height="400" alt="DOM">
+                
+                <p>DOM stands for "Document Object Map". It is basically a map of where things are displayed on a page according to the HTML. The DOM represents what the HTML is saying by mapping out the page in a relational manner.</p>
+                
+                <h4> <strong> 2. Building the CSSOM </strong> </h4>
+                
+                <img src="assets/media/cssom.png" width="600" height="400" alt="CCSOM">
+
+                <p> CSSOM stands for "CSS Object Map". It is basically a map of what styles should be applied to different parts of the page according to the CSS. The CSSOM maps out the way things should be presented using styles.</p>
+                
+                <h4> <strong> 3. Building the Render Tree </strong> </h4>
+                
+                <img src="assets/media/tree.png" width="600" height="400" alt="Render Tree">
+
+                <p> The render tree essentially takes the DOM and the CSSOM and combines them to create a full map of how the page will actually be laid out and painted. </p>
+                
+                <h4> <strong> 4. The Render </strong> </h4>
+                
+                <p> There are two main things that happen here: </p>
+                
+                <h5> <strong> a) Layout / Reflow </strong> </h5>
+                
+                <p> This part is called the layout or the reflow, and it is basically where the browser determines how big a screen is and how that will affect the way the page is displayed. </p>
+                
+                <h5> <strong> b) Paint </strong> </h5>
+                
+                <p> In this final stage, the browser will convert each node in the render tree to actual pixels on the screen.</p>
+
+    </div>
+</div>  
+</body>
+</html>
