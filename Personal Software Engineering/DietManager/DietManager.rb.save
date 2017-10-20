@@ -1,0 +1,29 @@
+require 'csv'
+require './BasicFood'
+require './Log'
+require './Recipe'
+require './FoodDB'
+
+DataBase = FoodDB.new()
+input = File.open('FoodDB.txt').read
+input.each_line do |line|
+	line.chomp!
+	separator = line.split(',')
+	if separator[1]== 'b'
+		bFood = BasicFood.new(separator[0], separator[2])
+		FoodDB.foods.push(bFood)
+	
+	end
+	else if separator[1] == 'r'
+		basic = Array.new
+		separator[2..1].each do |element|
+			basic.push(FoodDB.getFood(element))
+	end
+	
+
+$stdin.each_line do|args|
+	args.chomp!
+	case args
+		when "quit"
+			abort("
+

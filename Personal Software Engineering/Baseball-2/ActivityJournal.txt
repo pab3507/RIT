@@ -1,0 +1,30 @@
+SWEN-250 Activity Reflection
+Database -- SQL Practice - Relational Joins
+
+Name:Moisés Lora Pérez
+
+================================================================
+Queries 1 through 10:
+Estimated Time	1HH 00MM
+Plan: Look how to match specific keywords and equal specific fields
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 30MM
+Observations: Had to learn to how to use LIKE and get a specific table and match fields
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+Queries 11 through 15 (extra credit if done):
+Estimated Time	1HH MM
+Plan: Look up how to sort, use the count, avg, round function
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	2HH MM
+Observations: Had to use ORDER BY and GROUP BY, use the avg, round, and count functions.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================

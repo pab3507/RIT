@@ -1,0 +1,161 @@
+SWEN-250 Document Analysis Journal
+
+Your name: Moisés Lora Pérez mal3941
+
+================================================================
+Makefile
+Start
+Estimated Time	0HH 10MM
+Plan: Look at a basic makefile template.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 15MM
+Observations: Had to fix some issues with the makefile.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+read_file
+Start
+Estimated Time	0HH 30MM
+Plan: Look up the fscanf documentation
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 45MM
+Observations: Used a helper on this function, that took some long time.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+================================================================
+addNode
+Start
+Estimated Time	0HH 40MM
+Plan: Read up on the clas presentation on the node structure.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 40MM
+Observations: This function required lots of thinking and understanding
+of the node structure and how the doubly linked list worked.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+================================================================
+free_list
+Start
+Estimated Time	0HH 45MM
+Plan: Look up how to free memory from a node structure.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 15MM
+Observations: Took less time as this followed a basic template and was very simple.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_first_word
+Start
+Estimated Time	0HH 55MM
+Plan: Read on how to traverse trough the doubly linked list.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 15MM
+Observations: Took some time to understand how to traverse through the linked list.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_next_word
+Start
+Estimated Time	0HH 45MM
+Plan: Modify the get first word implementation to look at the next.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 45MM
+Observations: Similar to get first word
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_prev_word
+Start
+Estimated Time	0HH 40MM
+Plan: Modify the get next word implementation to look at the previous.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 15MM
+Observations: Was a simple modification to look at the node's previous.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_last_word
+Start
+Estimated Time	0HH 30MM
+Plan: Change the get first word implementation to look at the last.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 50MM
+Observations: Was very different from get first word fuction and had to think
+of another way to traverse through the doubly linked list.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_sentence_count
+Start
+Estimated Time	0HH 45MM
+Plan: Look at how to look at every element of the list.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 35MM
+Observations: It was much simpler than I thought.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+get_unique_word_count
+Start
+Estimated Time	0HH 40MM
+Plan: Look at string compare's implementation.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	0HH 20MM
+Observations: After looking at the implementation, took less time than expected.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+bonus get_most_common_word_after_this_word
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+bonus write_unique_word_list_to_csv_file
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================

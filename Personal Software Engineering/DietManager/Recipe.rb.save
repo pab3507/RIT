@@ -1,0 +1,16 @@
+
+class Recipe
+
+  def initialize( name, ingredients)
+    @name = name
+    @ingredients = ingredients
+  end
+
+  def print()
+        printf("%s %i \n", @name, @ingredients)
+  end
+
+  attr_reader :name, :ingredients
+end
+
+

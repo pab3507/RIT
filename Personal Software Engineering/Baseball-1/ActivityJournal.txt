@@ -1,0 +1,66 @@
+SWEN-250 Activity Reflection
+Database -- SQL Practice - Baseball Players
+
+Name: Moisés Lora
+
+================================================================
+Query 1: Find all the information on all the catchers (position 2) in the database
+Estimated Time	HH 15MM
+Plan: Look up who the select works and where works
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 10MM
+Observations: have to use select *
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+Query 2: Find the name and age of all pitchers (position 1) on the Rays
+Estimated Time	HH 10MM
+Plan: implement select and where for multiple fields
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 5MM
+Observations: use select plus name of the columns and AND for the where
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+Query 3: Find the name, number, and team of all outfielders (positions 7 through 9) who are 25 years old or younger
+Estimated Time	HH 10MM
+Plan: Look up how to use the where with multiple fields and using comparison operators
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 35MM
+Observations: Had to try multiple things but finally got the IN working along with the greater or equal operator.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+Query 4: Find the name and number of all infielders (positions 3 through 6) on the Red Sox
+Estimated Time	HH 20MM
+Plan:Implement the syntax to work for positions 3 thru 6
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 10MM
+Observations: This was a combination of query 2 and 3 and didnt take as much time as I expected.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+Query 5: Find the name, number, and team of all pitchers who are over 30 years old
+Estimated Time	HH 25MM
+Plan: Look at the previous queries done and implement into this one
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 10MM
+Observations: This was very similar to query 3, except with a single position and the greater operator.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================

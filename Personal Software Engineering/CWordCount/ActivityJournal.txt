@@ -1,0 +1,16 @@
+SWEN-250 Activity Reflection
+
+Name: Moises Lora
+
+================================================================
+Start Part 1
+Estimated Time	HH30 MM
+Plan: finish word count
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH45 MM
+Observations:Too more time than expected
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+==============================================================
