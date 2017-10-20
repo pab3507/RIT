@@ -1,0 +1,19 @@
+SWEN-250 Activity Reflection
+
+Name:Moisés Lora Pérez
+
+================================================================
+Start
+Estimated Time	0HH 30MM
+Plan:Read up linked list documentation
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 35MM
+Observations: This required a thorough understanding of linked lists
+and required much more effort that I originally expected.But this helped 
+with further understanding of the concepts.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
