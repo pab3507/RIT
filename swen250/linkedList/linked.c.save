@@ -1,0 +1,155 @@
+
+/* linked - linked list functions
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "linked.h"
+	
+static struct node* head = NULL;
+
+/************************************************************
+ length - return length of a list
+ ************************************************************/
+int length()
+{
+	struct node* temp = head;
+	int length = 0;
+	while(temp!= NULL){
+		length++;
+		temp = temp->next;
+	}
+	return length;
+}
+
+/************************************************************
+ push - add new node at beginning of list
+ ************************************************************/ 
+void push(int data) {
+	struct node *temp= malloc(sizeof(struct node));
+	if(length()==0){
+		temp->next=NULL;
+	}else{
+		temp->next=head;
+	}
+	temp->data=data;
+	head=temp;
+}
+/************************************************************
+ pop - delete node at beginning of non-empty list and return its data
+*************************************************************/ 
+int pop() {
+	int data;
+	if(length()>0){
+		data=head->data;
+		struct node *temp= malloc(sizeof(head->next));
+		temp=head->next;
+		free(head);
+		head=temp;
+	}else{
+		data=-1;
+		printf("LIST MUST NOT BE EMPTY\n");
+	}
+	return data;
+	
+}
+int pop2(struct node *ptr) {
+        int data;
+	data=ptr->data;
+	struct node *temp2= malloc(sizeof(ptr->next));
+        temp2=ptr->next;
+        free(ptr);
+        ptr=temp2;
+        
+        
+        return data;
+}
+/************************************************************
+ appendNode - add new node at end of list
+*************************************************************/ 
+void appendNode(int data) {
+	struct node *temp= head;
+	if(length()>0){
+        	while(temp->next!=NULL){
+	                //Going through the list until the temp pointer gets to the end of the list
+                	temp=temp->next;
+        	}
+		struct node *add_node = malloc(sizeof(struct node));
+		add_node->next=NULL;
+		add_node->data=data;
+		temp->next=add_node;
+		
+	}else{
+		push(data);
+	}
+}
+
+/************************************************************
+ copyList - return new copy of list
+*************************************************************/ 
+struct node* copyList() { 
+        struct node *temp= head;
+	struct node *returnNode = malloc(sizeof(struct node));
+	returnNode->data=temp->data;
+	returnNode->next=NULL;
+	temp=temp->next;
+                while(temp!=NULL){
+                        //Going through the list until the temp pointer gets to the end of the list
+	                int data=temp->data;
+			appendNode2(data, returnNode);
+			//Move to next item
+			temp=temp->next;
+			
+                }
+		
+		return returnNode;
+}
+/************************************************************
+ freeList - release all memory you allocated for the linked list.
+ NOTE -- add a unit test that calls this function and observes
+ that you returned 1 for success on freeing all memory.
+ The instructor will verify that you correctly freed all
+ allocated memory.
+ ************************************************************/ int freeList2(struct node *ptr){
+        struct node *current= ptr;
+        while(current!=NULL){
+                //Going through the list until the temp pointer gets to the end of the list
+                struct node *to_be_free= malloc(sizeof(struct node));
+                to_be_free=current;
+                current=current->next;
+                free(to_be_free);
+        }
+	ptr=NULL;
+	//Get the length
+	//This is the code from length()
+        struct node *temp= ptr;
+        int count=0;
+        while(temp!=NULL){
+                //Going through the list until the temp pointer gets to the end of the list
+                temp=temp->next;
+                count++;
+        }
+ 
+	
+        if(count==0){
+                //If space was freed, check if length is 0
+                return 1;
+        }
+        return 0;
+}
+int freeList() {
+	struct node *current= head;
+        while(current!=NULL){
+	        //Going through the list until the temp pointer gets to the end of the list
+        	struct node *to_be_free= malloc(sizeof(struct node));
+		to_be_free=current;
+		current=current->next;
+		free(to_be_free);
+        }
+	head=NULL;
+	if(length()==0){
+		//If space was freed, check if length is 0
+		return 1;
+	}
+ 	return 0;
+}
