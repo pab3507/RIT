@@ -1,0 +1,20 @@
+SWEN-250 Activity Reflection
+Ruby - Factorial with Unit Testing
+
+Name:Moisés Lora Pérez
+
+================================================================
+Start
+Estimated Time	0HH 30MM
+Plan:Work through the instructions and learn how Ruby's Unit Testing works.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 20MM
+Observations: Assert_Raise and Raise documentations weren't very explicit and it 
+took me some time to understand how to implement these correctly.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+

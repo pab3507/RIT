@@ -1,0 +1,20 @@
+SWEN-250 Activity Reflection
+Ruby - Git Repository Metrics
+
+Name:Moisés Lora
+
+================================================================
+Start
+Estimated Time	HH 30MM
+Plan:Brainstorm how to implement this requirements and also how to utilize the DayTime class
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	1HH 10MM
+Observations: This required much more thought and required more thorough understanding of working 
+with arrays and parsing on ruby than I expected.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+

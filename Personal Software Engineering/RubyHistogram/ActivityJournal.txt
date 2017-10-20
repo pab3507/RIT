@@ -1,0 +1,23 @@
+SWEN-250 Activity Reflection
+
+Name: Moisés Lora
+
+================================================================
+Start
+Estimated Time	2 H
+Plan:
+Read through the string manipulation documentation on Ruby and then look
+at how maps and arrays are utilized in Ruby. 
+
+Complete
+Actual Time	2 H 30 MM
+Observations:
+It was tough working all of this out because Ruby is a very different 
+language and handles concepts very differently than other languages.
+But after understanding how the Ruby Syntax worked it was simpler than
+I expected.
+
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================

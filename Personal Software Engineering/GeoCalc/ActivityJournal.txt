@@ -1,0 +1,48 @@
+SWEN-250 Activity Reflection
+Ruby - GeoCalc
+
+Name:Moisés Lora
+
+================================================================
+Start activity 1 -- complete and test the Line class in line.rb
+Estimated Time	HH 30MM
+Plan: Look how to initialize classes in Ruby and implement a line's length
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 15MM
+Observations: initializing ended up being pretty simple, and the line's length
+was just the distance formula
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+
+Start activity 2 -- complete and test the Circle class in circle.rb
+Estimated Time	HH 20MM
+Plan: Look up how to use the Math library for the use of PI in Ruby and how
+to initialize the circles values
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 45MM
+Observations: The Math Library was pretty easy to implement but the circle's 
+radius required some more effort because it utilized Line's length method.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
+
+Start activity 3 -- complete and test the Rectangle class in rectangle.rb
+Estimated Time	HH 20MM
+Plan: Brainstorm how to calculate rectangle's methods such as height, width, perimeter, etc.
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	HH 15MM
+Observations: Ended up being fairly simple with just regular calculations for the methods
+required.
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================

@@ -1,0 +1,17 @@
+SWEN-250 Activity Reflection
+
+Name: Moises Lora
+
+================================================================
+Start
+Estimated Time	1H   
+Plan:
+Read through the document and work through each function.
+
+Complete
+Actual Time	3H 20M
+Observations:
+It can be very difficult to grasp the concept of pointers and how they work
+with strings, and being able to understand where each pointer is pointing 
+towards can be very challenging.
+================================================================

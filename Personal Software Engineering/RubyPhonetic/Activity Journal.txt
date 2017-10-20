@@ -1,0 +1,21 @@
+
+SWEN-250 Activity Reflection
+Ruby - Phonetic
+ 
+Name: Moisés Lora
+ 
+================================================================
+Start
+Estimated Time 1HH 20MM
+Plan: Look at how to iterate through the array in Ruby and how to work every single index of it.
+(Order of implementation, testing approach, estimation technique)
+ 
+Complete
+Actual Time    0HH 50MM
+Observations: Learned several ruby methods such as how to use the.kindof? to check if object types match, also how to check first and last elements of array. 
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+ 
+ 
+================================================================
+ 
+ 
