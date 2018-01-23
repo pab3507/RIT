@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Image Preload Demonstration -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Preloading Images</title>
+		<link rel="stylesheet" href="preloadimages.css" >
+
+		<script type="text/javascript">
+			function loadImg(){
+				document.getElementById('bigPlace').innerHTML = '<img src="images/npkrka1big.jpg" name="bigpic" alt="big pics!" id="bigPic" />'
+				for(var i = 1; i<9; i++){
+					var img = document.createElement("img");
+					img.src= 'images/npkrka' + i + '.png'
+					var src = document.getElementById('imgHolder');
+					src.appendChild(img);
+				}
+			}
+
+		</script>
+	</head>
+	<body onload="loadImg();">
+		<!--Big Pics-->
+		<h1>Pictures of Krka National Park in Croatia.</h1>
+		<div id="bigPlace">
+			<!-- <img src="images/npkrka1big.jpg" name="bigpic" alt="big pics!" id="bigPic" /> -->
+		</div>
+
+		<!--div holding all of the thumbnail pictures-->
+		<div class="thumbnails">
+			<div id="imgHolder">
+				<!-- <img src="images/npkrka1.png" />
+				<img src="images/npkrka2.png" />
+				<img src="images/npkrka3.png" />
+				<img src="images/npkrka4.png" />
+				<img src="images/npkrka5.png" />
+				<img src="images/npkrka6.png" />
+				<img src="images/npkrka7.png" />
+				<img src="images/npkrka8.png" /> -->
+			</div>
+		</div>
+	</body>
+</html>

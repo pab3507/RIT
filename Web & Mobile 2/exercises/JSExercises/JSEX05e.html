@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Multiply and Divide</title>
+		<style>
+			body {
+				margin-left:1in;
+			}
+		</style>
+
+		<script>
+			// code two functions, multiply and divide, here
+			function divide(){
+				var firstNumber = document.getElementById("firstoperand").value;
+				var secondNumber = document.getElementById("secondoperand").value;
+				var res = firstNumber / secondNumber;
+				document.getElementById("result").innerHTML = res;
+			}
+
+			function multiply(){
+				var firstNumber = document.getElementById("firstoperand").value;
+				var secondNumber = document.getElementById("secondoperand").value;
+				var res = firstNumber * secondNumber;
+				document.getElementById("result").innerHTML = res;
+			}
+
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<p>JavaScript Exercise 5d </p>
+		</div>
+		<form>
+			<input type="text" id="firstoperand" placeholder="First Operand"/><br />
+			<input type="text" id="secondoperand" placeholder="Second Operand"/><br />
+			<input type="button" onClick="divide()" value="Divide" />
+			<input type="button" onClick="multiply()" value="Multiply" />
+			<p>The answer: <span id="result"></span></p>
+		</form>
+	</body>
+</html>

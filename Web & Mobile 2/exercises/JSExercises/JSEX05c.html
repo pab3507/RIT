@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- ISTE240 Exercise 5c -->
+		<meta charset=utf-8 />
+		<title>Count and display the options from a select</title>
+		<script>
+			function getOptions() {
+				// function to count and display the options from a select in an alert
+				var options = document.getElementById("mySelect").length;
+				alert(options);
+
+			}
+		</script>
+	</head>
+	<body>
+		<p>JavaScript Exercise 5c</p>
+		<form>
+			<select id="mySelect" size="6" multiple="multiple">
+				<option>Red</option>
+				<option>Green</option>
+				<option>Blue</option>
+				<option>Yellow</option>
+				<option>Orange</option>
+				<option>Purple</option>
+			</select>
+			<input type="button" onclick="getOptions()" value="Display the Options">
+		</form>
+	</body>
+</html>

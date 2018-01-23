@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- ISTE240 Exercise 5a -->
+		<meta charset=utf-8 />
+		<title>Change Paragraph Style</title>
+		<script>
+			function jsStyle() {
+				document.getElementById("text").setAttribute(
+   "style", "font-size: 100px; color:red;");
+			// function to change style
+			// Change the color and the size of the font
+			// in the paragraph with id='text'
+
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<p>JavaScript Exercise 5a </p>
+			<p id="text">This style of this paragraph will change when you click the button below.</p>
+		</div>
+		<div>
+			<button id="styleMe" onclick="jsStyle()">Change Style</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- ISTE240 Exercise 5d -->
+	<meta charset=utf-8 />
+	<title>Mouseover Red and Bold</title>
+	<script>
+
+		// first add an eventlistener to the section of code that will
+		// respond to the mouseover and mouseout events.
+		function init(){
+			document.getElementById('mousie').addEventListener("mouseout", mouseOut);
+			document.getElementById('mousie').addEventListener("mouseover", mouseOver);
+		}
+
+		function mouseOver() {
+			// set the font color to red
+			document.getElementById("mousie").style.color = "red";
+		}
+
+		function mouseOut() {
+			document.getElementById("mousie").style.color = "black";
+		}
+	</script>
+
+	</head>
+	<body onload="init();">
+		<div>
+			<p>JavaScript Exercise 5d </p>
+		</div>
+		<div>
+			<p id='mousie'>This sentence will turn red when you mouseover it.</p>
+		</div>
+	</body>
+</html>

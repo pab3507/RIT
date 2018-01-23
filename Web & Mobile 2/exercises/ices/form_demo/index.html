@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+	<title>Form Demo</title>
+	<link rel="stylesheet" type="text/css" href="form-styles.css" />
+	<script type="text/javascript">
+		function checkform(){
+			if (document.demo1.first_name.value.length==0) {
+				alert("Please fill in your first name.");
+				return false;
+			} else {
+				alert("Thank You " + document.demo1.first_name.value + "!");
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Web &amp; Mobile II Form Demo</h1>
+	<form	name="demo1"
+			action="https://people.rit.edu/~rpvvks/web2/form_demo/test.php"
+			method="POST"
+			onsubmit="return checkform();">
+<table>
+	<tr>
+		<th>Last Name:</th> <td><input type="text" name="last_name" /></td>
+	</tr>
+	<tr>
+		<th>First Name:</th> <td><input type="text" name="first_name" /></td>
+	</tr>
+	<tr>
+		<th>Password:</th> <td><input type="password" name="user_pass" /></td>
+	</tr>
+	<tr>
+		<th>Coffee:</th>
+		<td>
+			<input type="checkbox" name="sugar" />Sugar 
+			<input type="checkbox" name="cream" />Cream 
+			<input type="checkbox" name="irish" />Whiskey</td>
+	</tr>
+	<tr>
+		<th>Favorite Color:</th>
+		<td>
+			<input type="radio" name="color" value="#FF0000" checked="checked" />Red 
+			<input type="radio" name="color" value="#00FF00" checked="checked" />Green 
+			<input type="radio" name="color" value="#0000FF" checked="checked" />Blue</td>
+	</tr>
+	<tr>
+		<th></th> <td style="text-align:right;"><input type="submit" value="Send" /></td>
+	</tr>
+</table>
+	</form>
+</body>
+</html>

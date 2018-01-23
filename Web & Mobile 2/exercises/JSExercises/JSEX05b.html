@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- ISTE240 Exercise 5b -->
+		<meta charset="utf-8" />
+		<title>Get elements from a form</title>
+		<script>
+			function getFormValues() {
+			// function to display first and last names
+			// in an 'alert' message.
+				var fname = document.getElementById("fname").value;
+				var lname = document.getElementById("lname").value;
+
+				alert("Name: " +fname+" " + lname);
+			}
+
+		</script>
+	</head>
+	<body>
+		<p>JavaScript Exercise 5b</p>
+		<form id="regForm" onsubmit="getFormValues()">
+			First name:
+			<input type="text" id="fname" name="fname" value="Boo" />
+			<br />
+			Last name:
+			<input type="text" id="lname" name="lname" value="Radley" />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>

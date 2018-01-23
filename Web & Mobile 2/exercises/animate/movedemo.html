@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Animate</title>
+    <script src="animate.js"></script>
+</head>
+<body>
+	<h2>In-Class Exercise: JavaScript Timers</h2>
+	<p>
+		<button onclick="left('thingToMove');">&larr; Move Left</button>
+		<button onclick="stopMoving();">Stop</button>
+		<button onclick="right('thingToMove');">Move Right&rarr;</button>
+	</p>
+	<div id='thingToMove' style="left:10px; position:absolute;">
+		<img src="bluecircle.png" >
+	</div>
+	<div id="instructions" style="position: relative; top:1.25in;">
+		<h3>Instructions</h3>
+		<ol>
+			<li>Re-write animate.js to use <code>setInterval()</code> instead of <code>setTimeout</code></li>
+			<li>Add functionality to "bounce" off the side of the window rather than disappear.<br /><em>hint:</em> <code>window.innerWidth</code></li>
+		</ol>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" 
+			content="application/xhtml+xml; charset=utf-8" />
+	<title>JavaScript Demo</title>
+	<script language="javascript" type="text/javascript">
+		function myAlert() {
+			alert("Hello! I am an alert box!");
+		}
+		
+		function doInnerHTML() {
+			document.getElementById("demo1").innerHTML = "Hello World!";
+		}
+		
+		function changeImage() {
+			var image = document.getElementById("myImage");
+			if(image.src.match("bulbon")) {
+				image.src="pic_bulboff.gif";
+			} else {
+				image.src="pic_bulbon.gif";
+			}
+		}
+		
+		function changeStyle() {
+			var myMagicParagraph=document.getElementById("demo2");
+			myMagicParagraph.style.fontSize = "25pt";
+			myMagicParagraph.style.color = "red";
+		}
+		
+		function myValidate(){
+			var x, text;
+			//Get the value of the input field with id="numb"
+			x = document.getElementById("numb").value;
+			//if x is not a number or less than one or greater than 10
+			if (isNaN(x) || x<1 || x>10) {
+				text="Input Not Valid!";
+			} else {
+				text="Input OK! :o)";
+			}
+			document.getElementById("demo3").innerHTML = text;
+		}
+	</script>
+</head>
+<body>
+	<p>Click on the button to display an alert box:</p>
+	<button onclick="myAlert();">Try It</button>
+	
+	<hr /><!-- - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<p>Insert a message into the page:</p>
+	<button onclick="doInnerHTML();">Insert It</button>
+	<p id="demo1"></p>
+	
+	<hr /><!-- - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<p>JavaScript can change images:</p>
+	<img id="myImage" onclick="changeImage();" 
+		src="pic_bulboff.gif" style="width:100px; height:180px" />
+	
+	<hr /><!-- - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<p id="demo2">JavaScript can change the style 
+					of an HTML element.</p>
+	<button onclick="changeStyle();">Click Me!</button>
+
+	<hr /><!-- - - - - - - - - - - - - - - - - - - - - - - -->
+	<p>JavaScript can "validate" input:</p>
+	<p>Please input a number between 1 and 10:</p>
+	<input id="numb" />
+	<button onclick="myValidate();">Submit</button>
+	<p id="demo3"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

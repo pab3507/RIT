@@ -1,0 +1,56 @@
+/* Image Preload demonstration */
+
+h1 {
+	text-align: center;
+}
+
+/*big image placement*/
+
+#bigPlace {
+	width: 3.1in;
+	padding: 8pt;
+	margin:auto;
+}
+
+#bigPic {
+	width: 3in;
+}
+
+body {
+	background-color: #06440A;
+	color:#75CE75;
+}
+
+.thumbnails {
+	text-align: center;
+	margin: 8pt;
+	border-bottom-width:3pt; 
+	border-left-width: 3pt; 
+	border-right-width: 3pt; 
+	border-top-width: 3pt; 
+	border-style: outset; 
+	border-color:#337766; 
+	border-radius: 5pt;
+}
+
+.thumbnails div {
+	padding: 8pt;
+}
+
+img {
+	border-radius: 5pt;
+	-webkit-border-radius: 5pt;
+	-moz-border-radius: 5pt;
+	margin: 2pt;
+}
+
+#bigPlace {
+	border-bottom-width:3pt; 
+	border-left-width: 3pt; 
+	border-right-width: 3pt; 
+	border-top-width: 3pt; 
+	border-style: outset; 
+	border-color:#337766;
+}
+
+

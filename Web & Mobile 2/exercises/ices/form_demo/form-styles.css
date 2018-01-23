@@ -1,0 +1,8 @@
+th {
+	text-align:right;
+}
+
+th, td {
+	vertical-align: top;
+	font-family: helvetica, arial, sans-serif;
+}

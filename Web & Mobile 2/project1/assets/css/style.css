@@ -1,0 +1,313 @@
+/*Universal tags*/
+body {
+    background-color: #b71c1c;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    animation: pulse 3s;
+    margin: 0 auto;
+}
+
+footer{
+  margin: 0 auto;
+  text-align: center;
+  background-color: #b71c1c;
+}
+
+h1{
+  font-size: 36pt;
+  text-align: center;
+}
+h2,h3{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  color: grey;
+}
+
+p{
+  text-align: center;
+  line-height: 1.5;
+}
+
+hr{
+  border-color: black;
+}
+
+ul#footermenu li {
+  display: inline;
+}
+
+/* Responsive Grid*/
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.container {
+    margin: 0 auto;
+
+    padding: 2%;
+    animation: fadein 3s;
+}
+
+/* IDs for Section colors */
+#history{
+  background-color: #ef9a9a;
+}
+#culture{
+  background-color: #e57373;
+}
+#destinations{
+  background-color: #ef5350;
+}
+#info{
+  background-color: #e57373;
+}
+
+/* Fade-In Animation */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Button Class and Hover */
+.btn {
+  border-radius: 6px;
+  border-color: transparent;
+  font-size: 20px;
+  background: #3949AB;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  color:white;
+}
+
+.btn:hover {
+  background: #1A237E;
+  text-decoration: none;
+  color: white;
+}
+
+/* Custom Image Classes */
+.img-responsive{
+  max-width: 100%;
+  max-height: auto;
+}
+.img-circle {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+    color: black;
+    width: 70%;
+}
+
+/* Card for containing images  */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+    padding: 2px 16px;
+    background-color: inherit;
+}
+
+/* Navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #303F9F;
+    position: fixed;
+    top: 0;
+    margin-bottom: 50%;
+    z-index: 4;
+    width: 100%;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* Carousel */
+
+  .carousel-wrapper{
+    position:relative;
+    height: 600px;
+    width: 100%;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    position:absolute;
+    top:0;
+    display:block;
+    width:50px;
+    height:100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+
+  }
+
+  .arrow-prev{
+    left:0;
+  }
+
+  .arrow-next{
+      right:0;
+      -webkit-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+
+  .light{
+    color:white;
+  }
+
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+      height: auto;
+      display:block;
+    }
+
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url("../media/destinations/samana/samana.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    }
+  .item-2{
+    background:url("../media/culture/merengue.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+  }
+  .item-3{
+    background:url("../media/destinations/santodomingo/santodomingo.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+  }
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3{
+      z-index: 3;
+      opacity: 1;
+  }
