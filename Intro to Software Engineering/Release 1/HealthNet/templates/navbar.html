@@ -1,0 +1,111 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthNet Overview</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+    <link id="css_day" rel="stylesheet" href="../static/css/HealthNetApp/fc_dayview.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+
+        <!-- Navbar Brand -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/dashboard/">HealthNet </a>
+        </div>
+
+        {% if user.usertype != 'admin' %}
+            <!-- Navbar Items from Left Side-->
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-calendar"></span> Appointments
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% if request.path == '/dashboard/' or request.path == '/dashboard/apt' %}
+                            <li><a href="#" onclick="setDateAsToday()" data-target="#createAppointment"
+                                   data-toggle="modal">
+                                New Appointment </a></li>
+                        {% else %}
+                            <li><a href="/dashboard/apt">New Appointment </a></li>
+                        {% endif %}
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/appointments/"> View Appointments </a></li>
+                    </ul>
+                </li>
+
+                {% if user.usertype == "patient" %}
+
+                {% elif user.usertype == "nurse" or user.usertype == "doctor" %}
+                    {% if user.usertype == "doctor" %}
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+        {% endif %}
+        <!-- Navbar Items from Right Side-->
+        <ul class="nav navbar-nav navbar-right">
+
+
+            <!-- Account dropdown-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">
+                    {% if user.usertype == "patient" %}
+                        {{ user.first_name|safe|escape }} {{ user.last_name|safe|escape }}
+                    {% elif user.usertype == "doctor" %}
+                        Dr. {{ user.last_name|safe|escape }}
+                    {% elif user.usertype == "nurse" %}
+                        Nurse {{ user.last_name|safe|escape }}
+                    {% elif user.usertype == "admin" %}
+                        Administrator
+                    {% endif %}
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+
+                    {% if user.usertype != 'admin' %}
+                        <li><a>Signed in as {{ user.username }}</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/profile/">View Profile</a></li>
+                        <li><a href="/editprofile/">Edit Profile</a></li>
+                    {% else %}
+                        <li><a>Signed in as Admin</a></li>
+                    {% endif %}
+                    <li role="separator" class="divider"></li>
+
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.js"></script>
+<script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.js"></script>
+<script>
+    document.getElementById('css_day').disabled = true;
+</script>
+
+{% block javascript %}
+
+{% endblock %}
+
+</body>
+</html>

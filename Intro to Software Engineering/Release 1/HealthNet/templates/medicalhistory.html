@@ -1,0 +1,27 @@
+<!-- Import NavBar & CDNs-->
+{% include 'navbar.html' %}
+
+<!-- HTML Content-->
+{% block content %}
+    <div class="well col-md-10 col-md-offset-1">
+
+        <h4><b>Medical History: </b></h4>{{ user.health_history }}
+        <br><br><br>
+    </div>
+{% endblock %}
+
+<!-- JavaScript Content-->
+{% block javascript %}
+    <script>
+        $(document).ready(function () {
+            $('#appointmentsTable').DataTable({
+                "bLengthChange": false,
+                "pageLength": 5,
+            });
+
+            $('.dataTables_filter').each(function () {
+                $(this).prepend('<h4 style="float: left;"><b>Click a record for more information<b></h4>');
+            });
+        });
+    </script>
+{% endblock %}

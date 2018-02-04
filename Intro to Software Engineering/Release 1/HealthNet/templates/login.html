@@ -1,0 +1,186 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../static/css/form-elements.css">
+<link rel="stylesheet" href="../static/css/login.css">
+<link rel="stylesheet" href="../static/css/registration.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to HealthNet</title>
+</head>
+<body>
+
+<!-- Modal-->
+<br /><br /><br /><br /><br />
+<div class="top-content">
+
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3 ">
+        <div class="img-responsive">
+            <img src="/static/img/logo.png">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3 form-box">
+       	<div class="form-top">
+            <div class="form-top-left">
+                            			<h3>Login to our site</h3>
+                            		<p>Enter your username and password to log on:</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i style="color: #ca4738" class="fa fa-sign-in" aria-hidden="true"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form action="/login/" method="POST" id="login" role="form"  class="login-form">
+                                    {% csrf_token %}
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username"  id="form-username" >Username</label>
+                                        {{ form.username }}
+                                        {{ errors.username }}
+
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+                                        {{ form.password }}
+                                        {{ errors.password }}
+
+			                        </div>
+                                <div style="padding-bottom: 30px;">
+
+
+                                    <button style="margin-right: 1%;" type="submit" class="btn-lg btn-danger pull-right" value="Login">Login</button>
+                                    <button onclick="location.href='/register'" type="button" class="btn-lg btn-danger"> Register</button>
+{#                                  <button type="button" class="btn-lg btn-danger" data-toggle="modal" data-target="#myModal">Register</button>#}
+
+
+                                </div>
+                                </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+
+<div id="myModal" class="modal fade" role="dialog">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">Register</h3>
+        				<p>Fill in the form below to get instant access:</p>
+        			</div>
+
+        			<div class="modal-body">
+
+	                    <form action="/register/" method="POST" id="register">
+
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_username">Username</label>
+                                        {{ form.username }}
+                                        {{ errors.username }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_password">Password</label>
+                                        {{ form.password }}
+                                        {{ errors.password }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_first_name">First Name</label>
+                                        {{ form.first_name }}
+                                        {{ errors.first_name }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_last_name">Last Name</label>
+                                        {{ form.last_name }}
+                                        {{ errors.last_name }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_email">Email</label>
+                                        {{ form.email }}
+                                        {{ errors.email }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_phone">Phone Number</label>
+                                        {{ form.phone }}
+                                        {{ errors.phone }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_birthdate">Date of Birth</label>
+                                        {{ form.birthdate }}
+                                        {{ errors.birthdate }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_last_physical">Last Physical</label>
+                                        {{ form.last_physical }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_preferred_hospital">Primary Hospital</label>
+                                        {{ form.preferred_hospital }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_sex">Sex</label>
+                                        {{ form.sex }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% csrf_token %}
+                        <input type="submit" class="btn btn-block btn-danger" value="Register"/>
+                    </form>
+
+        		</div>
+        	</div>
+        </div>
+
+<footer style="padding-top: 120px;">
+    <div class="panel-footer">
+        <p> © Copyright 2017 - MoisesIsLateAgain - All Rights Reserved </p>
+    </div>
+</footer>
+
+<script src="{% static 'scripts/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'scripts/bootstrap.min.js' %}"></script>
+</body>
+</html>
