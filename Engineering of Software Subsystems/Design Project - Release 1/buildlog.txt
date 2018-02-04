@@ -1,0 +1,5 @@
+Information:javac 1.8.0_144 was used to compile java sources
+Information:2017-10-18 10:36 - Compilation completed successfully in 3s 122ms
+C:\Users\Joshua\Projects\design-project-team-1\src\AirportInfo.java
+Information:java: C:\Users\Joshua\Projects\design-project-team-1\src\AirportInfo.java uses unchecked or unsafe operations.
+Information:java: Recompile with -Xlint:unchecked for details.

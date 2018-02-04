@@ -1,0 +1,20 @@
+[
+  {
+    "itinerary": {
+      "origin": "ROC",
+      "destination": "ORD",
+      "flights": [
+        {
+          "originAirport": "ROC",
+          "destinationAirport": "ORD",
+          "arrivalTime": "6:23p",
+          "departureTime": "5:30p",
+          "flightNumber": 516,
+          "airfare": 277
+        }
+      ],
+      "id": 1
+    },
+    "passenger": "Josh"
+  }
+]
