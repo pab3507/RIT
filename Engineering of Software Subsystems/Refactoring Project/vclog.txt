@@ -1,0 +1,289 @@
+commit eb523c51d94d9b8d808dc83026d3a013cad044c2
+Author: Jack Corrigan <jcorrigan14@gmail.com>
+Date:   Tue Dec 5 17:16:17 2017 -0500
+
+    more Vector<Integer> declarations to remove warnings. Removed unused player variable
+
+commit 1ca7509c96437ff02bede6503483491e5d2a323c
+Author: Jack Corrigan <jcorrigan14@gmail.com>
+Date:   Tue Dec 5 16:54:33 2017 -0500
+
+    Declared Vector of Integers in wallPieceMoves to eliminate warnings
+
+commit eb2f3703c1a7bd9238e382fd0c2c84fedb54ae55
+Author: Jarrod <jarrodcummings1@aol.com>
+Date:   Tue Dec 5 16:37:53 2017 -0500
+
+    refactored checker pieces to match decorator pattern
+
+commit f0583b3d6f417ef5dc601afbfb30a1fd2d6dc1f6
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Tue Dec 5 14:25:09 2017 -0500
+
+    remove duplicate if
+
+commit 55c7ff13cd8b70b1b6a1a8e22bf1a151fe4f1e67
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Tue Dec 5 10:26:55 2017 -0500
+
+    add some comments for checker gui
+
+commit 64c7c3b003867d91838e002453c0d4c92bec24e5
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Tue Dec 5 08:59:59 2017 -0500
+
+    remove setMode method in facade
+
+commit 8de077fdb6baf28dcb50658530c541359d67263b
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Tue Dec 5 08:50:57 2017 -0500
+
+    remove create player method in facade
+
+commit 9e3c237234223f17b600f74fe8dbf173264fca88
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Tue Dec 5 08:09:23 2017 -0500
+
+    make new context class for state pattern
+
+commit e2d556e888de96d725eff8365d02194e3a663701
+Author: Eric <exl5325@rit.edu>
+Date:   Mon Dec 4 11:56:52 2017 -0500
+
+    Comments added
+
+commit 3c4c6cce66655720ddd658a69821a896c04fc84e
+Author: Eric <exl5325@rit.edu>
+Date:   Mon Dec 4 11:49:44 2017 -0500
+
+    Further extract method
+
+commit 968e580240bb8b08421c810080537d4b69dc19d3
+Merge: be9a6ac 95cee00
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Mon Dec 4 11:19:47 2017 -0500
+
+    Merge pull request #1 from BobbyRIT/checkpossiblejumps-refactoring-abdul
+    
+    Checkpossiblejumps refactoring abdul
+
+commit 95cee0053bd295f07a7d53407b01c8261f9a5183
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 16:11:47 2017 -0500
+
+    Fixed extract method
+    
+    Fixed extract method and removed unnessicary method
+
+commit 5f5fb253569b0883e75f3d9d793936da961dca5a
+Merge: a55c836 be9a6ac
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 16:03:17 2017 -0500
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into checkpossiblejumps-refactoring-abdul
+
+commit a55c836985d01512fec1c4a222f1b05cd880c250
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 16:02:23 2017 -0500
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into checkpossiblejumps-refactoring-abdul
+    
+    # Conflicts:
+    #       src/Game/Rules.java
+
+commit 2cedc3d8e99e71193ab91905739ad0777a42ce87
+Merge: 779cf43 f1679f7
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 16:01:18 2017 -0500
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into checkpossiblejumps-refactoring-abdul
+    
+    # Conflicts:
+    #       src/Game/Rules.java
+
+commit be9a6ac3a5d95b266a0c2906a7d1a9daa9402906
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 15:59:59 2017 -0500
+
+    Fresh commit
+
+commit 470e1f2dbe1e1f47eecab98d6370a5c8ef81b895
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 15:42:58 2017 -0500
+
+    Made components into state
+
+commit 779cf437e6879eba5dc21379f7fbcfdc5a454ba6
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 15:33:50 2017 -0500
+
+    Extracted method for check othe jumps
+    
+    Extracted method for check other jumps and rempved some Integer type
+    casting
+
+commit 31440a4e905fd64ea87fb7a21eeea2393a6cf4b8
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 15:33:10 2017 -0500
+
+    Fixed CheckerGUI
+
+commit 9ea674d5cedd82ab705cfea5031e139ba821857b
+Merge: dff1228 f1679f7
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 14:40:31 2017 -0500
+
+    Merge branch 'master' of https://github.com/BobbyRIT/refactoring-project-team-2-refactoring-project
+
+commit dff1228491ffa0360c5f45982c310a357474afbe
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 14:36:01 2017 -0500
+
+    Replace Exception with Test in SecondScreen
+
+commit d96089eec741f21d55459d5433aa57b0e41ec7b0
+Author: Abdulrahman Alfahad <aa8356@rit.edu>
+Date:   Sun Dec 3 14:29:45 2017 -0500
+
+    Extracted check possible jumps
+    
+    extracted methods from check possible jumps, starting on check other
+    possible jumps
+
+commit f1679f79cf9d463b3482b5fc45da57c114ba4d3c
+Merge: b795332 062dfaf
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sun Dec 3 14:16:16 2017 -0500
+
+    fix conflicts
+
+commit b79533212dbbc6e8ae3792a7281fbcd2ec60a99d
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sun Dec 3 14:08:23 2017 -0500
+
+    make set for selected space in actionPermored in checker gui
+
+commit 062dfafe989a432e5a2f4f16c7ed1e8966308b4f
+Merge: c718261 9ffbff0
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 14:00:36 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c7182616046c5cdca0158769eb2de73d22f0fe18
+Author: Eric <exl5325@rit.edu>
+Date:   Sun Dec 3 14:00:20 2017 -0500
+
+    Fixed some encapsulation issues with facade
+
+commit dedcdbb6bfae4b20f3d62065d64f5a99af81fab1
+Merge: 5b09737 9ffbff0
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sun Dec 3 12:40:43 2017 -0500
+
+    Merge branch 'master' into GuiRefactoring
+
+commit 5b097378b9a9177b954a188d216b678c51a960fc
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sun Dec 3 12:40:07 2017 -0500
+
+    add some comments
+
+commit 9ffbff000eba49a1ebd0764f19614515a8c9e6a1
+Merge: a0f319f f0471ed
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Sat Dec 2 19:40:24 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a0f319f952c709e23ccc8e515499a6a7e534c857
+Author: Moisés Lora Pérez <mal3941@rit.edu>
+Date:   Sat Dec 2 19:39:58 2017 -0500
+
+    Fixed Boxing
+
+commit f0471edc99b0bb675c9ac62219d997a6b4730d6c
+Author: Eric <exl5325@rit.edu>
+Date:   Sat Dec 2 18:52:17 2017 -0500
+
+    Small deletions
+
+commit d204c9a015497f685b7b4c2a0431a7e475484cca
+Author: Eric <exl5325@rit.edu>
+Date:   Sat Dec 2 17:02:23 2017 -0500
+
+    initComponents() cleanup
+
+commit bc4a90b80799497a2c87f375dc361ccae53466c4
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sat Dec 2 15:14:43 2017 -0500
+
+    finished extract helper method for CheckerGUI.java
+
+commit 3d2ef4babe0ef2f44b523e0f630196220781d322
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Sat Dec 2 14:52:35 2017 -0500
+
+    make update piece method for checker gui
+
+commit 924b20a33a2ebed30ea7bbf693f2bdb2d5560278
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Fri Dec 1 22:45:44 2017 -0500
+
+    make new method for shorter name
+
+commit 920e1bdeea9c62cf615e33fbb24398816d94c04f
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Fri Dec 1 22:33:23 2017 -0500
+
+    remove all 64 button
+
+commit 1b612dc9bcce941c89cd1009a428f26b11ad438e
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Fri Dec 1 13:36:16 2017 -0500
+
+    fix some style
+
+commit 11447a1e84d54e82da44bf2510b34fe46eb5a7ef
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Fri Dec 1 13:31:23 2017 -0500
+
+    added HostGameState and JoinGameState
+    
+    finish join game state and host game state and add some package
+
+commit fc8bbc2cf675bec75a753304a2be63a487501484
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Fri Dec 1 12:50:00 2017 -0500
+
+    finish local game state
+
+commit 1433d924a237d00077a420a2307794024ad4f988
+Author: Eric <exl5325@rit.edu>
+Date:   Fri Dec 1 11:23:57 2017 -0500
+
+    Unnecessary files removed
+
+commit e795b433fac287d7dacd9bf14ca34a8fe0ff2040
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Wed Nov 29 12:11:46 2017 -0500
+
+    fix gitignore
+
+commit 6dcfe90a27758219070fd88b7a2445e928a93e0c
+Author: dnp <doanhpham1995@gmail.com>
+Date:   Wed Nov 29 12:09:50 2017 -0500
+
+    make it work
+
+commit 66d97c1b03eff48d31ae753b36250ac193ff1e1c
+Author: Jarrod Cummings <jarrodcummings1@aol.com>
+Date:   Tue Nov 28 16:42:07 2017 -0500
+
+    Create README.md
+
+commit ab07a7a03731cddbc95afd53d86fb55c8cff6bc0
+Author: Jarrod <jarrodcummings1@aol.com>
+Date:   Tue Nov 28 16:37:58 2017 -0500
+
+    Initial commit
