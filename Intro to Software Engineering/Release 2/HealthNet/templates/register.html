@@ -1,0 +1,129 @@
+{{ form.non_field_errors }}
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/form-elements.css">
+<link rel="stylesheet" href="../static/css/registration.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthNet Registration</title>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3 ">
+        <div class="img-responsive">
+            <img src="/static/img/logo.png">
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="well col-md-6 col-md-offset-3">
+    <h1 class="text-center">Register</h1>
+
+    <form action="/register/" method="POST" id="register">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_username">Username</label>
+                        {{ form.username }}
+                        {{ errors.username }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_password">Password</label>
+                        {{ form.password }}
+                        {{ errors.password }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_first_name">First Name</label>
+                        {{ form.first_name }}
+                        {{ errors.first_name }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_last_name">Last Name</label>
+                        {{ form.last_name }}
+                        {{ errors.last_name }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_email">Email</label>
+                        {{ form.email }}
+                        {{ errors.email }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_phone">Phone Number</label>
+                        {{ form.phone }}
+                        {{ errors.phone }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_birthdate">Date of Birth</label>
+                        {{ form.birthdate }}
+                        {{ errors.birthdate }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_last_physical">Last Physical</label>
+                        {{ form.last_physical }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_preferred_hospital">Primary Hospital</label>
+                        {{ form.preferred_hospital }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id_sex">Sex</label>
+                        {{ form.sex }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pull-right">
+        {% csrf_token %}
+        <button type="submit" class="btn-lg btn-danger" value="Register">Register</button>
+        <button onclick="location.href='/login/'" type="button" class="btn-lg btn-danger"> Close</button>
+        </div>
+    </form>
+</div>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.js"></script>
+<script>
+    $('#id_phone').mask('(000) 000-0000', {placeholder: '(___) ___-____'});
+</script>
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+<script>
+    webshims.setOptions('waitReady', false);
+    webshims.setOptions('forms-ext', {types: 'date'});
+    webshims.polyfill('forms forms-ext');
+</script>
+</body>
+</html>
