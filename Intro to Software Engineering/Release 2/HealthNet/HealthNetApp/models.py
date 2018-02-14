@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 import re
 '''
-Author: TeamD-MoisesIsLateAgain
 Date: 2/20/2017
 Models.py
 File containing all the models and related functions for the models.
